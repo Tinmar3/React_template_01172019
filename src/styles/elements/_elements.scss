@@ -1,0 +1,15 @@
+html {
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+body {
+    font-variant-ligatures: common-ligatures;
+    font-feature-settings: 'liga', 'kern', 'pnum';
+    font-stretch: condensed;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @include breakpoint(500) {
+        background: red;
+      }
+}

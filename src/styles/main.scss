@@ -1,0 +1,10 @@
+:global {
+    @import "settings/**/*.scss";
+    @import "tools/**/*.scss";
+    @import "generic/**/*.scss";
+    @import "elements/**/*.scss";
+    @import "breakpoint";
+    @import "objects/**/*.scss";
+    @import "components/**/*.scss";
+    @import "utilities/**/*.scss";
+}
