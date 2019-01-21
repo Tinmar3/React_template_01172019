@@ -2,8 +2,8 @@
     @import "settings/**/*.scss";
     @import "tools/**/*.scss";
     @import "generic/**/*.scss";
+    @import '~breakpoint-sass/stylesheets/breakpoint'; // External breakpoint library
     @import "elements/**/*.scss";
-    @import "breakpoint";
     @import "objects/**/*.scss";
     @import "components/**/*.scss";
     @import "utilities/**/*.scss";
