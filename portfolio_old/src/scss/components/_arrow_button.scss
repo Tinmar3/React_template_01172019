@@ -1,0 +1,26 @@
+@mixin arrow-button($outerColor) {
+    & .arrow-button-outer {
+        position: relative;
+        height: 0px;
+        width: 50px;
+        border-top: 25px solid $outerColor;
+        border-right: 25px solid $outerColor;
+        border-bottom: 25px solid $outerColor;
+        border-left: 18px solid transparent;
+        &:after {
+            content: "";
+            display: inline-block;
+            border-top: 25px solid transparent;
+            border-right: 0px;
+            border-bottom: 25px solid transparent;
+            border-left: 18px solid $outerColor;
+            position: absolute;
+            top: -25px;
+            left: 75px;
+        }
+    }
+}
+
+.arrow-button {
+    @include arrow-button(gray);
+}

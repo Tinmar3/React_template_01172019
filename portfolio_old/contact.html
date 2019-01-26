@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        255 x 453
+    -->
+    <meta charset="UTF-8">
+
+    <title>Front-End Developer | Martin Angjic</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/png" href="./src/images/main_logo.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Open+Sans:400,400i,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Titillium+Web:400,400i,600,600i&amp;subset=latin-ext"
+        rel="stylesheet"> -->
+
+    <link rel="stylesheet" type="text/css" href="dist/styles_sass.css">
+
+</head>
+
+<body id="contact-page" class="contact">
+
+    <header>
+        <div class="grid center header-wrapper">
+            <a href="/">
+                <div class="logo main">MA</div>
+            </a>
+            <div class="menu-content">
+                <nav>
+                    <ul class="navigation-list">
+                        <li class="navigation-item">
+                            <a class="link navigation-link" href="/projects.html">PROJECTS</a>
+                        </li>
+                        <li class="navigation-item">
+                            <a class="link navigation-link" href="/about-me.html">ABOUT ME</a>
+                        </li>
+                        <li class="navigation-item active">
+                            <a class="link navigation-link" href="/contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mobile-menu-icon-wrapper">
+                <a class="mobile-menu-icon">
+                    <div class="mobile-menu-line"></div>
+                    <div class="mobile-menu-line"></div>
+                    <div class="mobile-menu-line"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg-picture" style="background-image: url('/src/images/1_Hu3vQJOIihS2IKbyjgnhFg.png')"></div>
+
+    <main class="grid center">
+        <div class="easy-overlay"></div>
+        <h2 class="big-text contact center">Feel free to <span class="brighter">contact</span> me.</h2>
+        <h3 class="medium-text-special center">Have an interesting project? Think we could successfully cooperate? Introduce yourself, tell me something about your
+            work and I'll get in touch as soon as possible.</h3>
+
+
+        <div class="form-container">
+            <!-- <div class="form-overlay"></div> -->
+            <form action="send_contact.php" method="post">
+                <input required class="contact-input" type="text" name="name" placeholder="Name *">
+                <input required class="contact-input" type="email" name="email" placeholder="E-mail *">
+                <textarea name="text" required rows="9" class="contact-textarea" placeholder="Tell me more about you and your project. *"></textarea>
+                <input class="undisplayed" type="submit" value="Send">
+                <a class="button-2 contact center">
+                        <span class="button-2-text">SUBMIT YOUR ENQUIRY</span>
+                </a>
+                <p class="note text note-contact">* Required</p>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="grid center">
+            <div class="logo footer">MA</div>
+            <p class="neutral-text footer">Handmade by me © 2017.</p>
+            <div class="social-list">
+                <a class="social-icon" href="https://www.facebook.com/martin.angjic" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a class="social-icon" href="https://www.linkedin.com/in/martin-angji%C4%87-7b9410b8/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        if (localStorage.getItem("firstTimeLoading")) {
+            document.body.classList.add('loading-done');
+        }
+    </script>
+    <script src="dist/bundle.js"></script>
+</body>

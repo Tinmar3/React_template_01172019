@@ -1,0 +1,119 @@
+.loader {
+    @include flex-total-center();
+    @include transition(0.3, ease-in-out);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $secondary-color;
+    z-index: 1000;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: none;
+    .loading-done & {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+.animate-loader.logo.main {
+    color: $main-color;
+    -webkit-animation: loaderAnimation 2s infinite;
+    -moz-animation: loaderAnimation 2s infinite;
+    -o-animation: loaderAnimation 2s infinite;
+    animation: loaderAnimation 2s infinite;
+}
+
+@keyframes loaderAnimation {
+    0% {
+        opacity: 1;
+        font-size: 7vmax;
+    }
+    25% {
+        opacity: 0.3;
+        font-size: 4vmax;
+    }
+    50% {
+        opacity: 1;
+        font-size: 7vmax;
+    }
+    75% {
+        opacity: 0.3;
+        font-size: 4vmax;
+    }
+    100% {
+        opacity: 1;
+        font-size: 7vmax;
+    }
+}
+
+@-o-keyframes loaderAnimation {
+    0% {
+        opacity: 1;
+        font-size: 7vmax;
+    }
+    25% {
+        opacity: 0.3;
+        font-size: 4vmax;
+    }
+    50% {
+        opacity: 1;
+        font-size: 7vmax;
+    }
+    75% {
+        opacity: 0.3;
+        font-size: 4vmax;
+    }
+    100% {
+        opacity: 1;
+        font-size: 7vmax;
+    }
+}
+
+@-moz-keyframes loaderAnimation {
+    0% {
+        opacity: 1;
+        font-size: 7vmax;
+    }
+    25% {
+        opacity: 0.3;
+        font-size: 4vmax;
+    }
+    50% {
+        opacity: 1;
+        font-size: 7vmax;
+    }
+    75% {
+        opacity: 0.3;
+        font-size: 4vmax;
+    }
+    100% {
+        opacity: 1;
+        font-size: 7vmax;
+    }
+}
+
+@-webkit-keyframes loaderAnimation {
+    0% {
+        opacity: 1;
+        font-size: 7vmax;
+    }
+    25% {
+        opacity: 0.3;
+        font-size: 4vmax;
+    }
+    50% {
+        opacity: 1;
+        font-size: 7vmax;
+    }
+    75% {
+        opacity: 0.3;
+        font-size: 4vmax;
+    }
+    100% {
+        opacity: 1;
+        font-size: 7vmax;
+    }
+}

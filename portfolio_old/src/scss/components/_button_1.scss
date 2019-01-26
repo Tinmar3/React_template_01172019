@@ -1,0 +1,50 @@
+.button-1 {
+    @include flex-center-vertical();
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    background-color: $main-color;
+    border-radius: 5px;
+    padding: 4px 10px;
+    cursor: pointer;
+    .button-1-text {
+        @include transition(0.4, ease-in-out);
+    }
+    .fa {
+        @include transition(0.4, ease-in-out);
+        font-size: 25px;
+        margin-left: 10px;
+        color: $neutral-color;
+    }
+    &:hover {
+        .fa {
+            margin-left: 15px;
+        }
+    }
+    &.reversed {
+        background-color: darken($secondary-color, 2%);
+        ;
+        color: $main-color;
+        .fa {
+            color: lighten($neutral-color, 10);
+        }
+        &:hover {
+            .fa {
+                margin-left: 20px;
+            }
+        }
+    }
+    &.center {
+        margin-left: 50%;
+        transform: translate3d(-50%, 0, 0);
+    }
+    &.special {
+        font-size: 13px;
+        font-weight: bold;
+        padding: 12px 32px;
+        @include transitionFree(unquote("color 0.2s 0.3s, background-color 0.3s ease-in-out, padding 0.3s 0s"));
+        background: $secondary-color;
+        &:hover {
+            padding: 12px 40px;
+        }
+    }
+}

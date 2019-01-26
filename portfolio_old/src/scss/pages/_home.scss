@@ -1,0 +1,56 @@
+.home {
+    .teaser {
+        margin-top: 61px;
+        height: 88vh;
+        height: calc(100vh - 61px);
+        position: relative;
+    }
+    .web-template-image {
+        height: 800px;
+        z-index: -1;
+        position: absolute;
+        display: none;
+    }
+
+    .main-title {
+        text-align: center;
+        .dynamical {
+            @include transitionFree(unquote("visibility 1.2s ease-in-out, opacity 1.2s ease-in-out"));
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+            opacity: 0;
+            display: block;
+            color: white;
+            &.active {
+                margin-top: 15px;
+                height: auto;
+                opacity: 1;
+                visibility: visible;
+                overflow: visible;
+            }
+        }
+    }
+
+    .teaser-text-wrapper {
+        height: 88vh;
+        height: calc(100vh - 81px);
+        @include total-center();
+    }
+}
+
+// mobile first
+@media (min-width: 450px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    .home {
+        .teaser {
+            margin-top: 81px;
+            height: calc(100vh - 81px);
+        }
+    }
+}
+
+@media (min-width: 1200px) {}

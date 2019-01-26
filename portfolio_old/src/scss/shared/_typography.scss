@@ -1,0 +1,183 @@
+.text {
+    font-family: $font-secondary;
+    color: $neutral-color;
+    font-size: 16px;
+    line-height: 145%;
+    margin-bottom: 10px;
+    clear: both;
+    &.note {
+        font-size: 14px;
+        text-align: center;
+    }
+    &.note-contact {
+        margin-top: 20px;
+    }
+}
+
+.secondary-text {
+    font-family: $font-secondary;
+    color: $main-color;
+}
+
+.neutral-text {
+    color: $neutral-color;
+    font-family: $font-secondary;
+}
+
+.text,
+.neutral-text {
+    .highlighted {
+        color: lighten($neutral-color, 16%);
+    }
+    .special {
+        font-family: $font-default;
+        color: $secondary-color;
+        font-weight: 700;
+    }
+}
+
+.brighter {
+    color: $neutral-color-brighter;
+}
+
+.brightest {
+    color: $neutral-color-brightest;
+}
+
+.darker {
+    color: $neutral-color-darker;
+}
+
+.link {
+    color: $secondary-color;
+    font-size: 16px;
+}
+
+.link-in-text {
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+h3 {
+    font-size: 20px;
+    &.h3-one {
+        margin-bottom: 20px;
+    }
+}
+
+.big-text {
+    font-weight: 700;
+    font-size: 29px;
+    &.projects {
+        margin-bottom: 10px;
+    }
+    &.about-me {
+        margin-bottom: 25px;
+    }
+    &.contact {
+        margin-bottom: 30px;
+    }
+}
+
+.big-text,
+.medium-text,
+.medium-text-special {
+    .special {
+        color: $neutral-color;
+    }
+    &.center {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.medium-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    &.projects {
+        margin-bottom: 40px;
+    }
+    &.center {
+        text-align: center;
+    }
+    &.about-me {
+        margin-bottom: 25px;
+    }
+    &.in-text {
+        margin: 18px 0 7px 0;
+        font-size: 21px;
+    }
+}
+
+.medium-text-special {
+    font-weight: 500;
+    color: $neutral-color;
+    line-height: 130%;
+    font-size: 18px;
+}
+
+h1 {}
+
+// mobile first
+@media (min-width: 450px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 48px;
+    }
+    .text {
+        font-size: 17px;
+        margin-bottom: 12px;
+        &.note-contact {
+            margin-top: 30px;
+        }
+    }
+    .big-text {
+        font-size: 50px;
+        line-height: 1.3;
+        &.projects {
+            width: 700px;
+            margin-bottom: 15px;
+        }
+        &.about-me {
+            margin-bottom: 60px;
+        }
+        &.contact {
+            margin-bottom: 40px;
+            width: 700px;
+        }
+    }
+    .medium-text {
+        font-size: 28px;
+        &.in-text {
+            margin: 25px 0 13px 0;
+            font-size: 21px;
+        }
+        &.projects,
+        &.contact {
+            width: 700px;
+        }
+        &.center {
+            width: auto;
+        }
+        &.about-me {
+            margin-bottom: 32px;
+        }
+        &.contact {}
+    }
+    .medium-text-special {
+        color: $neutral-color;
+        line-height: 130%;
+        width: 700px;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 1200px) {}

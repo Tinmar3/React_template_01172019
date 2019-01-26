@@ -1,0 +1,22 @@
+$font-default: 'Lato', sans-serif;
+$font-secondary: 'Open Sans', sans-serif;
+
+$main-color: rgb(8, 19, 64);
+// #112988 rgb(8, 19, 64)
+$main-darken: rgb(7, 16, 54);
+$main-lighten: rgb(8, 19, 65);
+$secondary-color: rgb(253, 125, 87);
+$secondary-darken: darken($secondary-color, 5%);
+
+$project-1-color: #3da27b; //salvus
+$project-2-color: rgb(43, 57, 144); //ssense
+$project-3-color: #ae0640; //magda
+$project-4-color: #E92629; // snet
+$project-5-color: #0060a1; // jbc
+$project-6-color: #FF0009; // duadvisor
+
+
+$neutral-color: rgb(147, 164, 170);
+$neutral-color-darker: darken($neutral-color, 25);
+$neutral-color-brighter: lighten($neutral-color, 20);
+$neutral-color-brightest: lighten($neutral-color, 30);

@@ -1,0 +1,19 @@
+.button-2 {
+    @include transitionFree(unquote("color 0.2s 0.3s, background-color 0.3s ease-in-out, padding 0.3s 0s"));
+    border: 2px solid $secondary-color;
+    padding: 10px 32px;
+    color: $neutral-color-brightest;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    border-radius: 13px;
+    display: inline-block;
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+    &:hover {
+        padding: 10px 40px;
+        background-color: $secondary-color;
+        color: $main-color;
+    }
+}

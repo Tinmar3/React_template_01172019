@@ -1,0 +1,25 @@
+{
+    "nodes": [
+      {
+        "page": "HomePage",
+        "url": "/",
+        "title": "HomePage"
+      },
+      {
+        "page": "ContactPage",
+        "url": "/contact",
+        "title": "ContactPage"
+      },
+      {
+        "page": "AboutMePage",
+        "url": "/about",
+        "title": "AboutMePage"
+      },
+      {
+        "page": "ProjectsPage",
+        "url": "/",
+        "title": "ProjectsPage"
+      }
+    ]
+  }
+  
